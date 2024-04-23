@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!--- basic page needs
+    ================================================== -->
+  <meta charset="utf-8" />
+  <title>CloudLab IA2 21BCP102</title>
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- mobile specific metas
+    ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- CSS
+    ================================================== -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- script
+    ================================================== -->
+  <script src="js/modernizr.js"></script>
+  <script defer src="js/fontawesome/all.min.js"></script>
+
+  <!-- favicons
+    ================================================== -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+</head>
+
+<body id="top">
+  <!-- preloader
+    ================================================== -->
+  <div id="preloader">
+    <div id="loader" class="dots-fade">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <!-- Header
+    ================================================== -->
+  <header class="s-header">
+    <div class="row">
+      <div class="s-header__content column">
+        <h1 class="s-header__logotext">
+          <a href="index.html" title="">Building a Three-Tier Application with Docker:</a>
+        </h1>
+        <!-- <p class="s-header__tagline">Put your awesome tagline here.</p> -->
+      </div>
+    </div>
+    <!-- end row -->
+
+    <nav class="s-header__nav-wrap">
+      <div class="row">
+        <ul class="s-header__nav">
+          <li class="current"><a href="index.html">Home</a></li>
+          <!-- <li class="has-children">
+            <a href="#0">Dropdown</a>
+            <ul>
+              <li><a href="#0">Submenu 01</a></li>
+              <li><a href="#0">Submenu 02</a></li>
+              <li><a href="#0">Submenu 03</a></li>
+            </ul>
+          </li>
+          <li><a href="demo.html">Demo</a></li>
+          <li><a href="archives.html">Archives</a></li>
+          <li class="has-children">
+            <a href="#0">Blog</a>
+            <ul>
+              <li><a href="blog.html">Blog Entries</a></li>
+              <li><a href="single.html">Single Blog</a></li>
+            </ul>
+          </li>
+          <li><a href="page.html">Page</a></li> -->
+        </ul>
+        <!-- end #nav -->
+      </div>
+    </nav>
+    <!-- end #nav-wrap -->
+
+    <a class="header-menu-toggle" href="#0" title="Menu"><span>Menu</span></a>
+  </header>
+  <!-- Header End -->
+
+  <!-- Content
+    ================================================== -->
+  <div class="s-content">
+    <div class="row">
+      <div id="main" class="s-content__main large-8 column">
+        <article class="entry">
+          <div class="entry__meta">
+            <ul>
+              <li>April 23, 2021</li>
+              <li><a href="#" title="" rel="category tag">21BCP418</a></li>
+              <li>Ravi Makwana</li>
+            </ul>
+          </div>
+
+          <header class="entry__header">
+            <h2 class="entry__title h1">
+              <a href="single.html" title="">Step 1 :Open the Project Code</a>
+            </h2>
+          </header>
+
+          <div class="entry__content">
+            <p>
+              Here, My Project name is RecipeHub which is a django application.
+              We will Create a docker image for the project directory. So Here Just open the Project Direcotry.
+            </p>
+          </div>
+          <div>
+            <img src="images/1.png">
+          </div>
+        </article>
+        <!-- end entry -->
+
+        <article class="entry">
+          <header class="entry__header">
+            <h2 class="entry__title h1">
+              <a href="single.html" title="">Step 2: Create Dockerfile</a>
+            </h2>
+          </header>
+
+          <div class="entry__content">
+            <p>
+              Create Dockerfile for both project.
+            </p>
+          </div>
+          <div>
+            <img src="images/10.png">
+          </div>
+        </article>
+        <!-- end entry -->
+
+        <article class="entry">
+          <header class="entry__header">
+            <h2 class="entry__title h1">
+              <a href="single.html" title="">Step 3: Write Dockerfile</a>
+            </h2>
+          </header>
+
+          <div class="entry__content">
+            <p>
+              Code the Docker Files:
+              <br>
+              python Environment: Uses the python 3 image.
+              <br>
+              Working Directory: Sets the working directory inside the container.
+              <br>
+
+              Dependencies Installation: Copies requirements.txt and install dependencies.
+              <br>
+
+              <br>
+              <br>
+
+              Application Start: Starts the application using python manage.py runserver.
+              <br>
+            </p>
+          </div>
+          <div>
+            <img src="images/9.png">
+          </div>
+        </article>
+        <!-- end entry -->
+
+        <article class="entry">
+          <header class="entry__header">
+            <h2 class="entry__title h1">
+              <a href="single.html" title="">Step 4: Create dockerhub repositroy</a>
+            </h2>
+          </header>
+
+          <div class="entry__content">
+            <p>
+              Go to hub.docker.com and create repository for the docker file.
+            </p>
+          </div>
+          <div>
+            <img src="images/11.png">
+            <img src="images/8.png">
+          </div>
+        </article>
+
+
+        <article class="entry">
+          <header class="entry__header">
+            <h2 class="entry__title h1">
+              <a href="single.html" title="">Step 5: Build the Images</a>
+            </h2>
+          </header>
+
+          <div class="entry__content">
+            <p>
+              Open the terminal at each loaction of dockerfile and build the dockerimage using docker build command
+              "docker build -t {dockerhub_username}\{repositoryname}:{tagname}"
+
+              Verify image creation using docker desktop.
+            </p>
+          </div>
+          <div>
+            <img src="images/2.png">
+            <img src="images/3.png">
+          </div>
+        </article>
+
+        <article class="entry">
+          <header class="entry__header">
+            <h2 class="entry__title h1">
+              <a href="single.html" title="">Step 6: Push the Image to Docker Hub</a>
+            </h2>
+          </header>
+
+          <div class="entry__content">
+            <p>
+              now push the image created to the repositroy created on dockerhub using docker push command
+              "docker push {dockerhub_username}\{repositoryname}:{tagname}"
+
+              Verify image creation in the repository of docker hub
+            </p>
+          </div>
+          <div>
+            <img src="images/4.png">
+            <img src="images/5.png">
+          </div>
+        </article>
+
+        <article class="entry">
+          <header class="entry__header">
+            <h2 class="entry__title h1">
+              <a href="single.html" title="">Step 7: Run the image and create containar</a>
+            </h2>
+          </header>
+
+          <div class="entry__content">
+            <p>
+              Firstly delete all the images and containers created related to this project.
+              <br>
+              Now run the image uplaoded to docker hub using docekr hub command.
+              <br>
+              Also map the port to the external loaal port so that the project can run on local port. using -p command
+              <br>
+              Add environment varibles if any. using -e command.
+              <br>
+              Verify the Container created in docekr desktop
+            </p>
+          </div>
+          <div>
+            <img src="images/6.png">
+          </div>
+        </article>
+
+        <article class="entry">
+          <header class="entry__header">
+            <h2 class="entry__title h1">
+              <a href="single.html" title="">Step 8: Run the project Locally</a>
+            </h2>
+          </header>
+
+          <div class="entry__content">
+            <p>
+              As port mapping is already done while running the project, we can direcly open the port on localhost to
+              run the servers
+              <br>
+            </p>
+          </div>
+          <div>
+            <img src="images\7.png">
+          </div>
+        </article>
+
+        <h1>Dockerization of a Three-tier Application is Completed</h1>
+
+        <h3>Here is the command to run the images</h3>
+        <h4>docker run -p 8000:8000 ravimak/cloudlab-ia2-21bcp418:21bcp418</h4>
+      </div>
+    </div>
+  </div>
+  <!-- end Footer-->
+
+  <!-- Java Script
+    ================================================== -->
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
